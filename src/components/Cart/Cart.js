@@ -12,9 +12,9 @@ import { Line, SingleCartWrap, ModalLayout, TotalSum } from "./Cart.styles";
 class Cart extends React.PureComponent {
   //TOTAL PRICE
   calcTotalPrice = () => {
-    let prices = [];
+    const prices = [];
     this.props.cartItems.map((product) => {
-      let prodQ = product.quantity;
+      const prodQ = product.quantity;
       return product.prices.map((price) => {
         if (price.currency === this.props.selectedCurrency) {
           prices.push(price.amount.toFixed() * prodQ);
