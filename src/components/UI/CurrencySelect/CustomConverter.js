@@ -13,10 +13,7 @@ import {
   ListItem,
 } from "./Converter.styles";
 
-import {
-  getProductsCurrency,
-  changeProductsCurrency,
-} from "../../../store/actions/cartActions";
+import { changeProductsCurrency } from "../../../store/actions/cartActions";
 
 class CustomConverter extends React.PureComponent {
   constructor(props) {
