@@ -10,7 +10,7 @@ export const ModalLayout = styled.div`
   padding: 1rem 1rem 0 1rem;
   position: absolute;
   top: 50px;
-  margin: 50px 0;
+  margin: 50px -10px;
 
   & h2 {
     padding-bottom: 1rem;
