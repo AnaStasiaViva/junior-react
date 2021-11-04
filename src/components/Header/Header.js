@@ -59,9 +59,11 @@ class Header extends React.PureComponent {
     const { cartItems } = this.props;
 
     //dymamic variable
-    let currencyImg = currencyUp;
+    let currencyImg;
     if (this.state.currencyDropdown) {
       currencyImg = currencyDown;
+    } else {
+      currencyImg = currencyUp;
     }
 
     return (
