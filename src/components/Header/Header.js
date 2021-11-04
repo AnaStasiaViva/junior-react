@@ -43,7 +43,7 @@ class Header extends React.PureComponent {
 
   //TOTAL AMOUNT OF ITEMS IN THE CART
   cartItemsTotalHandler = () => {
-    let total = [];
+    const total = [];
     this.props.cartItems.map((product) => {
       total.push(product.quantity);
     });
