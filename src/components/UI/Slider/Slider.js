@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import vectorRight from "../../../assets/images/vectorRight.png";
 import vectorLeft from "../../../assets/images/vectorLeft.png";
 
@@ -9,7 +9,7 @@ import {
   MainImage,
 } from "./Slider.styles";
 
-export default class Slider extends Component {
+export default class Slider extends React.PureComponent {
   state = {
     imgIndex: 0,
     images: [this.props.images],
@@ -61,47 +61,4 @@ export default class Slider extends Component {
   }
 }
 
-/*componentDidMount() {
-    console.log(this.state.images[0].length);
-  } */
 
-/* handleEvent = (e, actionType, item, items) => {
-    e.preventDefault();
-    let itemsLength, activeItem;
-  }; */
-
-/*const imageSliderHandler = () => {
-      if (this.state.images && this.state.activeItem < images.length - 1) {
-        this.setState({ activeItem: this.state.activeItem + 1 });
-      }
-      if (this.state.images && this.state.activeItem > 0) {
-        this.setState({ activeItem: this.state.activeItem - 1 });
-      }
-    }; */
-
-/* {this.state.images &&
-            this.state.images.map((image, idx) => <img src={image}></img>)} */
-
-/*switch (actionType) {
-      case "clickItem":
-        //console.info('MenuContent->paginationRender', { actionType, id: item.id, item });
-        this.setState({ activeItem: item.id });
-        break;
-      case "prevItem":
-        activeItem = this.state.activeItem;
-        if (activeItem === 0) {
-          break;
-        }
-        activeItem -= 1;
-        this.setState({ activeItem });
-        break;
-      case "nextItem":
-        itemsLength = items.length;
-        activeItem = this.state.activeItem;
-        if (activeItem === itemsLength - 1) {
-          break;
-        }
-        activeItem += 1;
-        this.setState({ activeItem });
-        break;
-    } */
