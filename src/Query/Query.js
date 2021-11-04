@@ -158,35 +158,4 @@ export const withQuery = graphql(
   `
 );
 
-/*export const CATEGORIES = gql`
-  query GetProducts($cursor: String, $limit: Int!) {
-    getProducts(cursor: $cursor, limit: $limit) {
-      cursor
-      categories {
-        name
-        products {
-          id
-          name
-          inStock
-          description
-          category
-          attributes {
-            id
-            name
-            type
-            items {
-              displayValue
-              value
-              id
-            }
-          }
-          prices {
-            currency
-            amount
-          }
-          brand
-        }
-      }
-    }
-  }
-`; */
+
